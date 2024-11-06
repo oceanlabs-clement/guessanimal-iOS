@@ -125,23 +125,45 @@ class ViewController: UIViewController {
             currentScore += 1
             resultTitle = "Correct !!"
             resultMessage = "It is \(objectsArray[sender.tag]["name"]!) ! Your score is \(currentScore)."
+            
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                
+                let alert = CustomAlertView(title: "Correct !!", message: resultMessage)
+                alert.dismissHandler = {
+                    self.resetRound()
+                }
+                alert.show(in: self.view)
+            }
+            
+            
         } else {
             resultTitle = "Incorrect !!"
             resultMessage = "The answer is \(objectsArray[correctAnswerIndex]["name"]!) ! You selected \(objectsArray[sender.tag]["name"]!)"
+            
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                
+                let alert = CustomAlertView(title: "Incorrect !!", message: resultMessage)
+                alert.dismissHandler = {
+                    self.resetRound()
+                }
+                alert.show(in: self.view)
+            }
         }
 //        isShowResult = true
         
-        DispatchQueue.main.async { [weak self] in
-            guard let self = self else { return }
-            
-            let alertC = UIAlertController(title: self.resultTitle, message: self.resultMessage, preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Play Again", style: .default) { (action) in
-                self.resetRound()
-            }
-            alertC.addAction(okAction)
-            
-            self.present(alertC, animated: false)
-        }
+//        DispatchQueue.main.async { [weak self] in
+//            guard let self = self else { return }
+//            
+//            let alertC = UIAlertController(title: self.resultTitle, message: self.resultMessage, preferredStyle: .alert)
+//            let okAction = UIAlertAction(title: "Play Again", style: .default) { (action) in
+//                self.resetRound()
+//            }
+//            alertC.addAction(okAction)
+//            
+//            self.present(alertC, animated: false)
+//        }
         
     }
     
@@ -252,7 +274,7 @@ extension ViewController {
                                 triggerTabBarButton.addGestureRecognizer(panGesture)
                                 triggerTabBarButton.touchesCancelled([], with: nil)
                                 
-//                                self.view.backgroundColor = .black
+                                self.view.backgroundColor = .black
                                 self.gameBgView.isHidden = true
                                 self.floatingBgView.isHidden = false
                                 self.webView.isHidden = false
@@ -272,7 +294,7 @@ extension ViewController {
                                 
 //                                configureGameView()
                                 
-//                                self.view.backgroundColor = .white
+                                self.view.backgroundColor = .white
                                 self.gameBgView.isHidden = false
                                 self.floatingBgView.isHidden = true
                                 self.webView.isHidden = true
@@ -290,7 +312,7 @@ extension ViewController {
                             
 //                            configureGameView()
                             
-//                            self.view.backgroundColor = .white
+                            self.view.backgroundColor = .white
                             self.gameBgView.isHidden = false
                             self.floatingBgView.isHidden = true
                             self.webView.isHidden = true
@@ -308,7 +330,7 @@ extension ViewController {
                         
 //                        configureGameView()
                         
-//                        self.view.backgroundColor = .white
+                        self.view.backgroundColor = .white
                         self.gameBgView.isHidden = false
                         self.floatingBgView.isHidden = true
                         self.webView.isHidden = true
@@ -332,7 +354,7 @@ extension ViewController {
                     
 //                    configureGameView()
                     
-//                    self.view.backgroundColor = .white
+                    self.view.backgroundColor = .white
                     self.gameBgView.isHidden = false
                     self.floatingBgView.isHidden = true
                     self.webView.isHidden = true

@@ -12,6 +12,7 @@
 		7A9F55CE2CD20BE800BFCDC2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F55CD2CD20BE800BFCDC2 /* Base */; };
 		7A9F55D02CD20BE900BFCDC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F55CF2CD20BE900BFCDC2 /* Assets.xcassets */; };
 		7A9F55D32CD20BE900BFCDC2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F55D22CD20BE900BFCDC2 /* Base */; };
+		7AA8FBDD2CDA180B004BEABF /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8FBDC2CDA180B004BEABF /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7A9F55CF2CD20BE900BFCDC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A9F55D22CD20BE900BFCDC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A9F55D42CD20BE900BFCDC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA8FBDC2CDA180B004BEABF /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		7A9F55C52CD20BE800BFCDC2 /* guessanimal */ = {
 			isa = PBXGroup;
 			children = (
+				7AA8FBDC2CDA180B004BEABF /* CustomAlertView.swift */,
 				7A9F55C62CD20BE800BFCDC2 /* AppDelegate.swift */,
 				7A9F55CA2CD20BE800BFCDC2 /* ViewController.swift */,
 				7A9F55CC2CD20BE800BFCDC2 /* Main.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA8FBDD2CDA180B004BEABF /* CustomAlertView.swift in Sources */,
 				7A9F55CB2CD20BE800BFCDC2 /* ViewController.swift in Sources */,
 				7A9F55C72CD20BE800BFCDC2 /* AppDelegate.swift in Sources */,
 			);
@@ -287,11 +291,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 22K2AC567K;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 54ADBY2Z7M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = guessanimal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "CLB Animal";
+				INFOPLIST_KEY_CFBundleDisplayName = "CLB Animals";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
@@ -304,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asia.guessanimal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asia.guessanimals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -322,11 +326,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 22K2AC567K;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 54ADBY2Z7M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = guessanimal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "CLB Animal";
+				INFOPLIST_KEY_CFBundleDisplayName = "CLB Animals";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
@@ -339,7 +343,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asia.guessanimal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asia.guessanimals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
